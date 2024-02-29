@@ -13,5 +13,10 @@
     <input type="submit">
 </form>
 
+<form action="procesarFormulario2" method="post"> 
+    <input type="text" name="nombreAlumno">
+    <input type="submit">
+</form>
+
 </body>
 </html>
