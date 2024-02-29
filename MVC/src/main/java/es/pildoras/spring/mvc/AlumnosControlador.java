@@ -32,7 +32,8 @@ public class AlumnosControlador {
     
     @RequestMapping("/procesarFormulario2")
     public String procesarFormularioSecundario (HttpServletRequest request, Model Modelo) {
-		// lee la informacion del cuadro de texto
+		
+    	// lee la informacion del cuadro de texto
     	
     	String nombre = request.getParameter("nombreAlumno");
     	
@@ -40,14 +41,26 @@ public class AlumnosControlador {
     	
     	// concatena 
     	
-    	String mensajeFinal = "¿Quien es el mejor alumno?" + nombre;
+    	String mensajeFinal = "¿Quien es el mejor alumno? " + nombre;
     	
     	// agregando datos al modelo
     	
-    	Modelo.addAttribute("mensajeIdentificativo", mensajeFinal);
+    	Modelo.addAttribute("mensajeFinal", mensajeFinal);
     	
     	// devuelve la vista
     	return "alumnosProcesarFormulario";
-
     }
-}
+    
+    
+    @PostMapping("/procesarFormularios")
+    public String procesarFormularios(@RequestParam("nombreAlumno") String nombreAlumno,
+                                      @RequestParam("nombreAlumno2") String nombreAlumno2,
+                                      Model model) {
+        // Agregar los nombres al modelo con nombres distintos
+        model.addAttribute("nombreAlumno", nombreAlumno);
+        model.addAttribute("nombreAlumno2", nombreAlumno2);
+        
+        return "alumnosProcesarFormulario2";
+    } 
+    
+} 

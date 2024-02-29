@@ -12,7 +12,8 @@
 
 <br>
 <h2>ATENCIÓN!</h2>
-${mensajeFinal}
+Los alumnos son ${nombreAlumno} y ${nombreAlumno2}
+
 
 </body>
 </html>

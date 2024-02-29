@@ -18,5 +18,11 @@
     <input type="submit">
 </form>
 
+<form action="procesarFormularios" method="post"> 
+    <input type="text" name="nombreAlumno">
+    <input type="text" name="nombreAlumno2">
+    <input type="submit" value="Enviar">
+</form>
+
 </body>
 </html>
