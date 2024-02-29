@@ -10,5 +10,7 @@
 
 <h1> TEXTO H1 </h1>
 
+<a href="muestraFormulario">IR AL FORMULARIO</a>
+
 </body>
 </html>

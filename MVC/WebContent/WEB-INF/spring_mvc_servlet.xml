@@ -7,15 +7,15 @@
 						http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
 						http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-	<!--  paquete a escanear en busca de componentes -->
+
 	<context:component-scan base-package="es.pildoras.spring.mvc" />
 
 	<mvc:annotation-driven />
 
-	<!-- Configuracion del view resolver-->
+
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="WEB-INF/vista/" />
+		<property name="prefix" value="/WEB-INF/vista/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
 
