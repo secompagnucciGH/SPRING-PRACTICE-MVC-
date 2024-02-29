@@ -3,16 +3,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Formulario de Alumnos</title>
+<meta charset="UTF-8">
+<title>Proceso del formulario</title>
 </head>
 <body>
 
-<form action="procesarFormulario" method="get">
-    <label for="nombreAlumno">Nombre del Alumno:</label>
-    <input type="text" id="nombreAlumno" name="nombreAlumno">
-    <input type="submit" value="Enviar">
-</form>
+Hola ${nombreAlumno}. Bienvenido al curso de Spring
 
 </body>
 </html>
